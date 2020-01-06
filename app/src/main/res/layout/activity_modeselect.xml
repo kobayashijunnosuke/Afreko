@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/style_menu_background"
+    android:orientation="vertical"
+    tools:context=".ModeSelectActivity">
+
+    <!-- 上バナー -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="left"
+        android:background="@null"
+        android:orientation="horizontal">
+        <!-- 戻るボタン -->
+        <ImageView
+            android:id="@+id/returnBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:layout_margin="10px"
+            android:src="@drawable/return_button"
+            android:onClick="returnMenu"/>
+        <!-- サムネイル画像 -->
+        <ImageView
+            android:id="@+id/thumbnail"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingVertical="5dp"
+            android:adjustViewBounds="true"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/mainContents"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_weight="4">
+        <!-- 動画アニメ -->
+        <ImageView
+            android:tag="AnimeActivity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:padding="10dp"
+            android:src="@drawable/icon_anime"
+            android:onClick="startAnimeActivity"/>
+        <!-- 録音 -->
+        <ImageView
+            android:tag="StudioActivity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:padding="10dp"
+            android:src="@drawable/icon_studio"
+            android:onClick="showDialog"/>
+        <!--単語 -->
+        <ImageView
+            android:tag="VocabularyActivity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:padding="10dp"
+            android:src="@drawable/icon_vocabulary"
+            android:onClick="startVocaburaryModeSelectActivity"/>
+    </LinearLayout>
+
+</LinearLayout>

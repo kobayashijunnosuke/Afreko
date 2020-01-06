@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?><!--
+  DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS HEADER.
+
+  Copyright 1997-2010 Oracle and/or its affiliates. All rights reserved.
+
+  Oracle and Java are registered trademarks of Oracle and/or its affiliates.
+  Other names may be trademarks of their respective owners.
+
+  The contents of this file are subject to the terms of either the GNU General Public
+  License Version 2 only ("GPL") or the Common Development and Distribution
+  License("CDDL") (collectively, the "License"). You may not use this file except in
+  compliance with the License. You can obtain a copy of the License at
+  http://www.netbeans.org/cddl-gplv2.html or nbbuild/licenses/CDDL-GPL-2-CP. See the
+  License for the specific language governing permissions and limitations under the
+  License.  When distributing the software, include this License Header Notice in
+  each file and include the License file at nbbuild/licenses/CDDL-GPL-2-CP.  Oracle
+  designates this particular file as subject to the "Classpath" exception as provided
+  by Oracle in the GPL Version 2 section of the License file that accompanied this code.
+  If applicable, add the following below the License Header, with the fields enclosed
+  by brackets [] replaced by your own identifying information:
+  "Portions Copyrighted [year] [name of copyright owner]"
+  
+  Contributor(s):
+  
+  The Original Software is NetBeans. The Initial Developer of the Original Software
+  is Sun Microsystems, Inc. Portions Copyright 1997-2007 Sun Microsystems, Inc. All
+  Rights Reserved.
+  
+  If you wish your version of this file to be governed by only the CDDL or only the
+  GPL Version 2, indicate your decision by adding "[Contributor] elects to include
+  this software in this distribution under the [CDDL or GPL Version 2] license." If
+  you do not indicate a single choice of license, a recipient has the option to
+  distribute your version of this file under either the CDDL, the GPL Version 2 or
+  to extend the choice of license to its licensees as provided above. However, if you
+  add GPL Version 2 code and therefore, elected the GPL Version 2 license, then the
+  option applies only if the new code is made subject to such option by the copyright
+  holder.
+--><registry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="registry.xsd">
+<components>
+        <product built="1475201797162" expand="true" features="" offset="10000" platforms="windows linux solaris-sparc solaris-x86 macosx-ppc macosx-x86" status="installed" uid="nb-base" version="8.2.0.0.201609300101" visible="true">
+            <display-name>
+                <default>Base IDE</default>
+                <localized locale="zh_CN">\u57FA\u672C IDE</localized>
+                <localized locale="ru">\u0411\u0430\u0437\u043E\u0432\u0430\u044F \u0441\u0440\u0435\u0434\u0430 IDE</localized>
+                <localized locale="ja">\u30D9\u30FC\u30B9IDE</localized>
+                <localized locale="pt_BR">IDE Base</localized>
+            </display-name>
+            <description>
+                <default>Core components of an integrated development environment.</default>
+                <localized locale="zh_CN">\u96C6\u6210\u5F00\u53D1\u73AF\u5883\u7684\u6838\u5FC3\u7EC4\u4EF6\u3002</localized>
+                <localized locale="ru">\u041E\u0441\u043D\u043E\u0432\u043D\u044B\u0435 \u043A\u043E\u043C\u043F\u043E\u043D\u0435\u043D\u0442\u044B \u0438\u043D\u0442\u0435\u0433\u0440\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u043E\u0439 \u0441\u0440\u0435\u0434\u044B \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0438.</localized>
+                <localized locale="ja">\u7D71\u5408\u958B\u767A\u74B0\u5883\u306E\u30B3\u30A2\u30FB\u30B3\u30F3\u30DD\u30FC\u30CD\u30F3\u30C8\u3067\u3059\u3002</localized>
+                <localized locale="pt_BR">Componentes principais de um ambiente de desenvolvimento integrado.</localized>
+            </description>
+            <icon md5="ba2e5405747bc88dce475a947f329f82" size="1944">
+                <default-uri>file:/C:/Users/Junnosuke%20Kobayashi/.nbi/tmp/icon.png</default-uri>
+                <alternate-uri>resource:data/nb-base/8.2.0.0.201609300101/windows%20linux%20solaris-sparc%20solaris-x86%20macosx-ppc%20macosx-x86/icon.png</alternate-uri>
+                <alternate-uri>file:/home.local/ffjre/fs_root/workspace/NB-82/dist/installers/registry-temp/components/products/nb-base/8.2.0.0.201609300101/windows%20linux%20solaris-sparc%20solaris-x86%20macosx-ppc%20macosx-x86/icon.png</alternate-uri>
+            </icon>
+            <properties>
+                <property name="installation.location.windows">C:\Program Files\NetBeans 8.2</property>
+                <property name="minimum.jdk.version">1.8.0</property>
+                <property name="jre.nested">jre.nested</property>
+                <property name="jdk.location">C:\Program Files\NetBeans 8.2\bin\jre</property>
+                <property name="installation.timestamp">1491525660058</property>
+                <property name="start.menu.shortcut.location">all.users</property>
+                <property name="installation.location.macosx">$N{install}/NetBeans/NetBeans 8.2.app</property>
+                <property name="installation.location">$N{install}/netbeans-8.2</property>
+                <property name="netbeans.summary.message.text">29の更新は正常にインストールされました。
+
+</property>
+                <property name="desktop.shortcut.location">all.users</property>
+            </properties>
+            <configuration-logic>
+                <file md5="d75e75c9653a9fdcfdf6ced06457a2c4" size="51789">
+                    <default-uri>file:/C:/Users/Junnosuke%20Kobayashi/.nbi/tmp/logic,1.jar.0</default-uri>
+                    <alternate-uri>resource:data/nb-base/8.2.0.0.201609300101/windows%20linux%20solaris-sparc%20solaris-x86%20macosx-ppc%20macosx-x86/logic/logic,1.jar</alternate-uri>
+                    <alternate-uri>file:/home.local/ffjre/fs_root/workspace/NB-82/dist/installers/registry-temp/components/products/nb-base/8.2.0.0.201609300101/windows%20linux%20solaris-sparc%20solaris-x86%20macosx-ppc%20macosx-x86/logic/logic,1.jar</alternate-uri>
+                </file>
+            </configuration-logic>
+            <installation-data>
+                <file md5="431ee3ee7cd47d3308867014f30651c2" size="9882514">
+                    <default-uri>resource:data/nb-base/8.2.0.0.201609300101/windows%20linux%20solaris-sparc%20solaris-x86%20macosx-ppc%20macosx-x86/data/data,1.jar</default-uri>
+                    <alternate-uri>file:/home.local/ffjre/fs_root/workspace/NB-82/dist/installers/registry-temp/components/products/nb-base/8.2.0.0.201609300101/windows%20linux%20solaris-sparc%20solaris-x86%20macosx-ppc%20macosx-x86/data/data,1.jar</alternate-uri>
+                </file>
+                <file md5="195915c61700ea6c6bc83ff0f0faaeed" size="1848908">
+                    <default-uri>resource:data/nb-base/8.2.0.0.201609300101/windows%20linux%20solaris-sparc%20solaris-x86%20macosx-ppc%20macosx-x86/data/data,2.jar</default-uri>
+                    <alternate-uri>file:/home.local/ffjre/fs_root/workspace/NB-82/dist/installers/registry-temp/components/products/nb-base/8.2.0.0.201609300101/windows%20linux%20solaris-sparc%20solaris-x86%20macosx-ppc%20macosx-x86/data/data,2.jar</alternate-uri>
+                </file>
+                <file md5="9f1d82f783383a014b97fbfbd71c45ee" size="44798853">
+                    <default-uri>resource:data/nb-base/8.2.0.0.201609300101/windows%20linux%20solaris-sparc%20solaris-x86%20macosx-ppc%20macosx-x86/data/data,3.jar</default-uri>
+                    <alternate-uri>file:/home.local/ffjre/fs_root/workspace/NB-82/dist/installers/registry-temp/components/products/nb-base/8.2.0.0.201609300101/windows%20linux%20solaris-sparc%20solaris-x86%20macosx-ppc%20macosx-x86/data/data,3.jar</alternate-uri>
+                </file>
+                <file md5="9495fbf79913fca73a124d255db4cc33" size="4071816">
+                    <default-uri>resource:data/nb-base/8.2.0.0.201609300101/windows%20linux%20solaris-sparc%20solaris-x86%20macosx-ppc%20macosx-x86/data/data,4.jar</default-uri>
+                    <alternate-uri>file:/home.local/ffjre/fs_root/workspace/NB-82/dist/installers/registry-temp/components/products/nb-base/8.2.0.0.201609300101/windows%20linux%20solaris-sparc%20solaris-x86%20macosx-ppc%20macosx-x86/data/data,4.jar</alternate-uri>
+                </file>
+            </installation-data>
+            <system-requirements>
+                <disk-space>198927295</disk-space>
+            </system-requirements>
+            <dependencies>
+                <install-after uid="jdk"/>
+                <install-after uid="jre-nested"/>
+            </dependencies>
+        </product>
+        <product built="1475201856055" expand="false" features="" offset="12500" platforms="windows linux solaris-sparc solaris-x86 macosx-ppc macosx-x86" status="installed" uid="nb-extide" version="8.2.0.0.201609300101" visible="true">
+            <display-name>
+                <default>Extended IDE</default>
+                <localized locale="zh_CN">\u6269\u5C55 IDE</localized>
+                <localized locale="ru">\u0420\u0430\u0441\u0448\u0438\u0440\u0435\u043D\u043D\u0430\u044F \u0441\u0440\u0435\u0434\u0430 IDE</localized>
+                <localized locale="ja">\u62E1\u5F35IDE</localized>
+                <localized locale="pt_BR">IDE Estendido</localized>
+            </display-name>
+            <description>
+                <default>Additional components of an integrated development environment.</default>
+                <localized locale="zh_CN">\u96C6\u6210\u5F00\u53D1\u73AF\u5883\u7684\u9644\u52A0\u7EC4\u4EF6\u3002</localized>
+                <localized locale="ru">\u0414\u043E\u043F\u043E\u043B\u043D\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0435 \u043A\u043E\u043C\u043F\u043E\u043D\u0435\u043D\u0442\u044B \u0438\u043D\u0442\u0435\u0433\u0440\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u043E\u0439 \u0441\u0440\u0435\u0434\u044B \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0438.</localized>
+                <localized locale="ja">\u7D71\u5408\u958B\u767A\u74B0\u5883\u306E\u8FFD\u52A0\u30B3\u30F3\u30DD\u30FC\u30CD\u30F3\u30C8\u3067\u3059\u3002</localized>
+                <localized locale="pt_BR">Componentes adicionais de um ambiente de desenvolvimento integrado.</localized>
+            </description>
+            <icon md5="05e2a8559297e66601b0275dfbb75f60" size="821">
+                <default-uri>file:/C:/Users/Junnosuke%20Kobayashi/.nbi/tmp/icon.png.0</default-uri>
+                <alternate-uri>resource:data/nb-extide/8.2.0.0.201609300101/windows%20linux%20solaris-sparc%20solaris-x86%20macosx-ppc%20macosx-x86/icon.png</alternate-uri>
+                <alternate-uri>file:/home.local/ffjre/fs_root/workspace/NB-82/dist/installers/registry-temp/components/products/nb-extide/8.2.0.0.201609300101/windows%20linux%20solaris-sparc%20solaris-x86%20macosx-ppc%20macosx-x86/icon.png</alternate-uri>
+            </icon>
+            <properties>
+                <property name="installation.location">C:\Program Files\NetBeans 8.2</property>
+                <property name="show-in-wizard">false</property>
+            </properties>
+            <configuration-logic>
+                <file md5="fdb32bfed5e91533b5de02bf082bfd8d" size="4534">
+                    <default-uri>file:/C:/Users/Junnosuke%20Kobayashi/.nbi/tmp/logic,1.jar.1</default-uri>
+                    <alternate-uri>resource:data/nb-extide/8.2.0.0.201609300101/windows%20linux%20solaris-sparc%20solaris-x86%20macosx-ppc%20macosx-x86/logic/logic,1.jar</alternate-uri>
+                    <alternate-uri>file:/home.local/ffjre/fs_root/workspace/NB-82/dist/installers/registry-temp/components/products/nb-extide/8.2.0.0.201609300101/windows%20linux%20solaris-sparc%20solaris-x86%20macosx-ppc%20macosx-x86/logic/logic,1.jar</alternate-uri>
+                </file>
+            </configuration-logic>
+            <installation-data>
+                <file md5="1e82b15ef5a12fac1600645a7f7a8c45" size="1058769">
+                    <default-uri>resource:data/nb-extide/8.2.0.0.201609300101/windows%20linux%20solaris-sparc%20solaris-x86%20macosx-ppc%20macosx-x86/data/data,1.jar</default-uri>
+                    <alternate-uri>file:/home.local/ffjre/fs_root/workspace/NB-82/dist/installers/registry-temp/components/products/nb-extide/8.2.0.0.201609300101/windows%20linux%20solaris-sparc%20solaris-x86%20macosx-ppc%20macosx-x86/data/data,1.jar</alternate-uri>
+                </file>
+                <file md5="3612c17091e9fa96637ffeb8c2b451e8" size="400905">
+                    <default-uri>resource:data/nb-extide/8.2.0.0.201609300101/windows%20linux%20solaris-sparc%20solaris-x86%20macosx-ppc%20macosx-x86/data/data,2.jar</default-uri>
+                    <alternate-uri>file:/home.local/ffjre/fs_root/workspace/NB-82/dist/installers/registry-temp/components/products/nb-extide/8.2.0.0.201609300101/windows%20linux%20solaris-sparc%20solaris-x86%20macosx-ppc%20macosx-x86/data/data,2.jar</alternate-uri>
+                </file>
+            </installation-data>
+            <system-requirements>
+                <disk-space>6051738</disk-space>
+            </system-requirements>
+            <dependencies>
+                <requirement uid="nb-base" version-lower="8.2.0.0.201609300101" version-upper="8.2.0.0.201609300101"/>
+                <install-after uid="jre-nested"/>
+            </dependencies>
+        </product>
+        <product built="1475203453226" expand="false" features="" offset="20000" platforms="windows linux" status="installed" uid="jre-nested" version="8.2.0.0.201609300101" visible="true">
+            <display-name>
+                <default>JRE 8 Update 101</default>
+            </display-name>
+            <description>
+                <default>JRE Nested</default>
+                <localized locale="zh_CN">\u5D4C\u5957 JRE</localized>
+                <localized locale="ru">\u0412\u043B\u043E\u0436\u0435\u043D\u043D\u0430\u044F JRE</localized>
+                <localized locale="ja">\u5165\u308C\u5B50\u306B\u306A\u3063\u305FJRE</localized>
+                <localized locale="pt_BR">JRE Aninhado</localized>
+            </description>
+            <icon md5="c0e28a810e9808f7f7e93b14641a931d" size="3357">
+                <default-uri>file:/C:/Users/Junnosuke%20Kobayashi/.nbi/tmp/icon.png.1</default-uri>
+                <alternate-uri>resource:data/jre-nested/8.2.0.0.201609300101/windows%20linux/icon.png</alternate-uri>
+                <alternate-uri>file:/home.local/ffjre/fs_root/workspace/NB-82/dist/installers/registry-temp/components/products/jre-nested/8.2.0.0.201609300101/windows%20linux/icon.png</alternate-uri>
+            </icon>
+            <properties>
+                <property name="installation.location">$N{install}/netbeans-8.2/bin/jre</property>
+                <property name="installation.location.windows">C:\Program Files\NetBeans 8.2\bin\jre</property>
+            </properties>
+            <configuration-logic>
+                <file md5="46f088b17c973df3ce0b8957cb20c182" size="20756">
+                    <default-uri>file:/C:/Users/Junnosuke%20Kobayashi/.nbi/tmp/logic,1.jar</default-uri>
+                    <alternate-uri>resource:data/jre-nested/8.2.0.0.201609300101/windows%20linux/logic/logic,1.jar</alternate-uri>
+                    <alternate-uri>file:/home.local/ffjre/fs_root/workspace/NB-82/dist/installers/registry-temp/components/products/jre-nested/8.2.0.0.201609300101/windows%20linux/logic/logic,1.jar</alternate-uri>
+                </file>
+            </configuration-logic>
+            <installation-data/>
+            <system-requirements>
+                <disk-space>0</disk-space>
+            </system-requirements>
+        </product>
+        <product built="1475202548618" expand="false" features="" offset="42500" platforms="windows linux solaris-sparc solaris-x86 macosx-ppc macosx-x86" status="installed" uid="nb-webcommon" version="8.2.0.0.201609300101" visible="true">
+            <display-name>
+                <default>HTML5/JavaScript</default>
+            </display-name>
+            <description>
+                <default>Tools for developing HTML5 web applications, Node.js applications and Cordova applications, both on the desktop, as well as with iOS and Android devices. Includes HTML5/Javascript application project type, page inspector and visual CSS style editor, editors for HTML, JavaScript, CSS, SASS and LESS, and a JavaScript debugger.</default>
+                <localized locale="zh_CN">\u7528\u4E8E\u5728\u684C\u9762\u4EE5\u53CA iOS \u548C Android \u8BBE\u5907\u4E0A\u5F00\u53D1 HTML5 Web \u5E94\u7528\u7A0B\u5E8F, Node.js \u5E94\u7528\u7A0B\u5E8F\u548C Cordova \u5E94\u7528\u7A0B\u5E8F\u7684\u5DE5\u5177\u3002\u5305\u62EC HTML5/Javascript \u5E94\u7528\u7A0B\u5E8F\u9879\u76EE\u7C7B\u578B, \u9875\u68C0\u67E5\u5668\u548C\u53EF\u89C6 CSS \u6837\u5F0F\u7F16\u8F91\u5668, \u7528\u4E8E HTML, JavaScript, CSS, SASS \u548C LESS \u7684\u7F16\u8F91\u5668, \u4EE5\u53CA JavaScript \u8C03\u8BD5\u5668\u3002</localized>
+                <localized locale="ru">\u0421\u0440\u0435\u0434\u0441\u0442\u0432\u0430 \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0438 \u0432\u0435\u0431-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u0439 HTML5, \u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u0439 Node.js \u0438 Cordova, \u043A\u0430\u043A \u043D\u0430 \u043D\u0430\u0441\u0442\u043E\u043B\u044C\u043D\u044B\u0445 \u041F\u041A, \u0442\u0430\u043A \u0438 \u043D\u0430 \u0443\u0441\u0442\u0440\u043E\u0439\u0441\u0442\u0432\u0430\u0445 \u043F\u043E\u0434 \u0443\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u0435\u043C iOS \u0438 Android. \u0412\u043A\u043B\u044E\u0447\u0430\u0435\u0442 \u0442\u0438\u043F \u043F\u0440\u043E\u0435\u043A\u0442\u0430 \u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F HTML5/Javascript, \u0438\u043D\u0441\u043F\u0435\u043A\u0442\u043E\u0440 \u0441\u0442\u0440\u0430\u043D\u0438\u0446 \u0438 \u0432\u0438\u0437\u0443\u0430\u043B\u044C\u043D\u044B\u0439 \u0440\u0435\u0434\u0430\u043A\u0442\u043E\u0440 \u0441\u0442\u0438\u043B\u0435\u0439 CSS, \u0440\u0435\u0434\u0430\u043A\u0442\u043E\u0440 \u0434\u043B\u044F HTML, JavaScript, CSS, SASS \u0438 LESS, \u0430 \u0442\u0430\u043A\u0436\u0435 \u043E\u0442\u043B\u0430\u0434\u0447\u0438\u043A JavaScript.</localized>
+                <localized locale="ja">HTML5 Web\u30A2\u30D7\u30EA\u30B1\u30FC\u30B7\u30E7\u30F3\u3001Node.js\u30A2\u30D7\u30EA\u30B1\u30FC\u30B7\u30E7\u30F3\u304A\u3088\u3073Cordova\u30A2\u30D7\u30EA\u30B1\u30FC\u30B7\u30E7\u30F3\u3092\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\u4E0A\u3067\u3001\u540C\u69D8\u306BiOS\u304A\u3088\u3073Android\u30C7\u30D0\u30A4\u30B9\u3067\u3082\u958B\u767A\u3059\u308B\u305F\u3081\u306E\u30C4\u30FC\u30EB\u3002HTML5/Javascript\u30A2\u30D7\u30EA\u30B1\u30FC\u30B7\u30E7\u30F3\u30FB\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\u30FB\u30BF\u30A4\u30D7\u3001\u30DA\u30FC\u30B8\u30FB\u30A4\u30F3\u30B9\u30DA\u30AF\u30BF\u304A\u3088\u3073\u30D3\u30B8\u30E5\u30A2\u30EBCSS\u30B9\u30BF\u30A4\u30EB\u30FB\u30A8\u30C7\u30A3\u30BF\u3001HTML\u3001JavaScript\u3001CSS\u3001SASS\u304A\u3088\u3073LESS\u306E\u30A8\u30C7\u30A3\u30BF\u3001\u304A\u3088\u3073JavaScript\u30C7\u30D0\u30C3\u30AC\u304C\u542B\u307E\u308C\u307E\u3059\u3002</localized>
+                <localized locale="pt_BR">Ferramentas para desenvolver aplica\u00E7\u00F5es web HTML5, aplica\u00E7\u00F5es Node.js e Cordova, no desktop e tamb\u00E9m com dispositivos iOS e Android. Inclui tipo de projeto de aplica\u00E7\u00E3o HTML5/Javascript, inspetor de p\u00E1gina e editor visual no estilo CSS, editores para HTML, JavaScript, CSS, SASS e LESS, al\u00E9m de um depurador JavaScript.</localized>
+            </description>
+            <icon md5="05e2a8559297e66601b0275dfbb75f60" size="821">
+                <default-uri>file:/C:/Users/Junnosuke%20Kobayashi/.nbi/tmp/icon.png.2</default-uri>
+                <alternate-uri>resource:data/nb-webcommon/8.2.0.0.201609300101/windows%20linux%20solaris-sparc%20solaris-x86%20macosx-ppc%20macosx-x86/icon.png</alternate-uri>
+                <alternate-uri>file:/home.local/ffjre/fs_root/workspace/NB-82/dist/installers/registry-temp/components/products/nb-webcommon/8.2.0.0.201609300101/windows%20linux%20solaris-sparc%20solaris-x86%20macosx-ppc%20macosx-x86/icon.png</alternate-uri>
+            </icon>
+            <properties>
+                <property name="installation.location">C:\Program Files\NetBeans 8.2</property>
+            </properties>
+            <configuration-logic>
+                <file md5="24d11927d12193dabbc8a1a49e587cb9" size="4527">
+                    <default-uri>file:/C:/Users/Junnosuke%20Kobayashi/.nbi/tmp/logic,1.jar.2</default-uri>
+                    <alternate-uri>resource:data/nb-webcommon/8.2.0.0.201609300101/windows%20linux%20solaris-sparc%20solaris-x86%20macosx-ppc%20macosx-x86/logic/logic,1.jar</alternate-uri>
+                    <alternate-uri>file:/home.local/ffjre/fs_root/workspace/NB-82/dist/installers/registry-temp/components/products/nb-webcommon/8.2.0.0.201609300101/windows%20linux%20solaris-sparc%20solaris-x86%20macosx-ppc%20macosx-x86/logic/logic,1.jar</alternate-uri>
+                </file>
+            </configuration-logic>
+            <installation-data>
+                <file md5="d59ef40a547950d6f4c81659f08fa0ad" size="8582961">
+                    <default-uri>resource:data/nb-webcommon/8.2.0.0.201609300101/windows%20linux%20solaris-sparc%20solaris-x86%20macosx-ppc%20macosx-x86/data/data,1.jar</default-uri>
+                    <alternate-uri>file:/home.local/ffjre/fs_root/workspace/NB-82/dist/installers/registry-temp/components/products/nb-webcommon/8.2.0.0.201609300101/windows%20linux%20solaris-sparc%20solaris-x86%20macosx-ppc%20macosx-x86/data/data,1.jar</alternate-uri>
+                </file>
+            </installation-data>
+            <system-requirements>
+                <disk-space>23117658</disk-space>
+            </system-requirements>
+            <dependencies>
+                <requirement uid="nb-base" version-lower="8.2.0.0.201609300101" version-upper="8.2.0.0.201609300101"/>
+                <install-after uid="jre-nested"/>
+            </dependencies>
+        </product>
+        <product built="1475203401618" expand="false" features="" offset="45000" platforms="windows linux solaris-sparc solaris-x86 macosx-ppc macosx-x86" status="installed" uid="nb-php" version="8.2.0.0.201609300101" visible="true">
+            <display-name>
+                <default>PHP</default>
+            </display-name>
+            <description>
+                <default>Tools for developing PHP applications, including PHP editor and debugger, project management, integration with Apache server, support for MySQL and other databases, FTP upload and download, JavaScript support and other features.</default>
+                <localized locale="zh_CN">\u7528\u4E8E\u5F00\u53D1 PHP \u5E94\u7528\u7A0B\u5E8F\u7684\u5DE5\u5177, \u5305\u62EC PHP \u7F16\u8F91\u5668\u548C\u8C03\u8BD5\u5668, \u9879\u76EE\u7BA1\u7406, Apache \u670D\u52A1\u5668\u96C6\u6210, MySQL \u548C\u5176\u4ED6\u6570\u636E\u5E93\u652F\u6301, FTP \u4E0A\u8F7D\u548C\u4E0B\u8F7D, JavaScript \u652F\u6301\u4EE5\u53CA\u5176\u4ED6\u529F\u80FD\u3002</localized>
+                <localized locale="ru">\u0421\u0440\u0435\u0434\u0441\u0442\u0432\u0430 \u0434\u043B\u044F \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0438 \u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u0439 \u043D\u0430 PHP, \u0432\u043A\u043B\u044E\u0447\u0430\u044F \u0440\u0435\u0434\u0430\u043A\u0442\u043E\u0440, \u043E\u0442\u043B\u0430\u0434\u0447\u0438\u043A, \u0441\u0440\u0435\u0434\u0441\u0442\u0432\u0430 \u0443\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u044F \u043F\u0440\u043E\u0435\u043A\u0442\u0430\u043C\u0438, \u0438\u043D\u0442\u0435\u0433\u0440\u0430\u0446\u0438\u044E \u0441 \u0441\u0435\u0440\u0432\u0435\u0440\u043E\u043C Apache, \u043F\u043E\u0434\u0434\u0435\u0440\u0436\u043A\u0443 MySQL \u0438 \u0434\u0440\u0443\u0433\u0438\u0445 \u0431\u0430\u0437 \u0434\u0430\u043D\u043D\u044B\u0445, \u0432\u043E\u0437\u043C\u043E\u0436\u043D\u043E\u0441\u0442\u0438 \u0437\u0430\u0433\u0440\u0443\u0437\u043A\u0438 \u0438 \u0432\u044B\u0433\u0440\u0443\u0437\u043A\u0438 \u043D\u0430 \u0441\u0435\u0440\u0432\u0435\u0440\u0435 FTP, \u043F\u043E\u0434\u0434\u0435\u0440\u0436\u043A\u0443 JavaScript \u0438 \u0434\u0440.</localized>
+                <localized locale="ja">PHP\u30A8\u30C7\u30A3\u30BF\u3068\u30C7\u30D0\u30C3\u30AC\u3001\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\u7BA1\u7406\u3001Apache\u30B5\u30FC\u30D0\u30FC\u3068\u306E\u7D71\u5408\u3001MySQL\u3068\u305D\u306E\u4ED6\u306E\u30C7\u30FC\u30BF\u30D9\u30FC\u30B9\u306E\u30B5\u30DD\u30FC\u30C8\u3001FTP\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9\u3068\u30C0\u30A6\u30F3\u30ED\u30FC\u30C9\u3001JavaScript\u30B5\u30DD\u30FC\u30C8\u3001\u304A\u3088\u3073\u305D\u306E\u4ED6\u306E\u6A5F\u80FD\u3092\u542B\u3080PHP\u30A2\u30D7\u30EA\u30B1\u30FC\u30B7\u30E7\u30F3\u958B\u767A\u7528\u30C4\u30FC\u30EB\u3002</localized>
+                <localized locale="pt_BR">Ferramentas para desenvolvimento de aplica\u00E7\u00F5es PHP, incluindo editor PHP e depurador, gerenciamento de projeto, integra\u00E7\u00E3o com servidor Apache, suporte para MySQL e outros bancos de dados, upload e download de FTP, suporte a JavaScript e outras funcionalidades.</localized>
+            </description>
+            <icon md5="05e2a8559297e66601b0275dfbb75f60" size="821">
+                <default-uri>file:/C:/Users/Junnosuke%20Kobayashi/.nbi/tmp/icon.png.3</default-uri>
+                <alternate-uri>resource:data/nb-php/8.2.0.0.201609300101/windows%20linux%20solaris-sparc%20solaris-x86%20macosx-ppc%20macosx-x86/icon.png</alternate-uri>
+                <alternate-uri>file:/home.local/ffjre/fs_root/workspace/NB-82/dist/installers/registry-temp/components/products/nb-php/8.2.0.0.201609300101/windows%20linux%20solaris-sparc%20solaris-x86%20macosx-ppc%20macosx-x86/icon.png</alternate-uri>
+            </icon>
+            <properties>
+                <property name="installation.location">C:\Program Files\NetBeans 8.2</property>
+            </properties>
+            <configuration-logic>
+                <file md5="d15b847e944996e9f6f310d88ad65a29" size="4471">
+                    <default-uri>file:/C:/Users/Junnosuke%20Kobayashi/.nbi/tmp/logic,1.jar.3</default-uri>
+                    <alternate-uri>resource:data/nb-php/8.2.0.0.201609300101/windows%20linux%20solaris-sparc%20solaris-x86%20macosx-ppc%20macosx-x86/logic/logic,1.jar</alternate-uri>
+                    <alternate-uri>file:/home.local/ffjre/fs_root/workspace/NB-82/dist/installers/registry-temp/components/products/nb-php/8.2.0.0.201609300101/windows%20linux%20solaris-sparc%20solaris-x86%20macosx-ppc%20macosx-x86/logic/logic,1.jar</alternate-uri>
+                </file>
+            </configuration-logic>
+            <installation-data>
+                <file md5="8643ce41512b62e45d43e1bc0e83c446" size="3232487">
+                    <default-uri>resource:data/nb-php/8.2.0.0.201609300101/windows%20linux%20solaris-sparc%20solaris-x86%20macosx-ppc%20macosx-x86/data/data,1.jar</default-uri>
+                    <alternate-uri>file:/home.local/ffjre/fs_root/workspace/NB-82/dist/installers/registry-temp/components/products/nb-php/8.2.0.0.201609300101/windows%20linux%20solaris-sparc%20solaris-x86%20macosx-ppc%20macosx-x86/data/data,1.jar</alternate-uri>
+                </file>
+            </installation-data>
+            <system-requirements>
+                <disk-space>21996788</disk-space>
+            </system-requirements>
+            <dependencies>
+                <requirement uid="nb-base" version-lower="8.2.0.0.201609300101" version-upper="8.2.0.0.201609300101"/>
+                <requirement uid="nb-webcommon" version-lower="8.2.0.0.201609300101" version-upper="8.2.0.0.201609300101"/>
+                <requirement uid="nb-extide" version-lower="8.2.0.0.201609300101" version-upper="8.2.0.0.201609300101"/>
+                <install-after uid="jre-nested"/>
+            </dependencies>
+        </product>
+    </components>
+</registry>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Parlons le français</string>
+    <string name="title_activity_vocabulary_mode_select">VocabularyModeSelectActivity</string>
+    <string name="title_activity_credit">Credit</string>
+</resources>

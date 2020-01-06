@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDFFD2"
+    tools:context=".AnimeActivity"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="8"
+        android:orientation="vertical">
+        <!-- 上部バナー -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <!-- 戻るボタン -->
+            <ImageButton
+                android:id="@+id/returnBtn"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:scaleType="fitCenter"
+                android:onClick="onClickReturnBtn"
+                android:padding="5dp"
+                android:src="@drawable/return_button"
+                android:adjustViewBounds="true"
+                android:background="@null"/>
+            <!-- シーン画像 -->
+            <ImageView
+                android:id="@+id/sceneThumbnail"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingVertical="5dp"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"/>
+            <!--音量シークバー -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="15dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:paddingRight="5dp"
+                    android:src="@drawable/icon_sound"/>
+                <SeekBar
+                    android:id="@+id/volumeBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- 動画 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:background="#000">
+            <SurfaceView android:id="@+id/surface"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 下部コンテンツ -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <!-- 区切り線 -->
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#666" />
+        <!-- サイドボタン -->
+        <LinearLayout
+            android:id="@+id/sideMenu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- モード画像 -->
+            <ImageButton
+                android:id="@+id/modethumbnail"
+                style="@style/animationPlayerButton"
+                android:onClick="changeMode"/>
+            <!-- 再生ボタン -->
+            <ImageButton
+                android:id="@+id/startBtn"
+                android:onClick="startMovie"
+                style="@style/animationPlayerButton"
+                android:src="@drawable/player_start"/>
+            <!-- 頭出しボタン -->
+            <ImageButton
+                android:id="@+id/restartBtn"
+                android:onClick="restartMovie"
+                style="@style/animationPlayerButton"
+                android:src="@drawable/player_restart_disactive"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- 各種ボタン -->
+
+</LinearLayout>
+

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VocabularyModeSelectActivity"
+    android:orientation="vertical">
+
+    <!-- 上バナー -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingVertical="5px"
+        android:gravity="left"
+        android:background="#CFC"
+        android:orientation="horizontal">
+        <!-- 戻るボタン -->
+        <ImageView
+            android:id="@+id/returnBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="5dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/return_button"
+            android:onClick="returnMenu"/>
+        <!-- サムネイル画像 -->
+        <ImageView
+            android:id="@+id/thumbnail"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="5dp"
+            android:adjustViewBounds="true"/>
+    </LinearLayout>
+    <!-- 区切り線 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#666" />
+
+    <!-- メインレイアウト -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:paddingHorizontal="5dp">
+        <!-- mode_a -->
+        <LinearLayout
+            android:id="@+id/group_a"
+            android:tag="a"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="5dp"
+            android:orientation="vertical"
+            android:background="#fff3d2">
+            <ImageView
+                android:id="@+id/mode_a"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:padding="5dp"
+                android:adjustViewBounds="true"/>
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:src="@drawable/btn_formation"
+                android:onClick="startFormation"/>
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:src="@drawable/btn_exament"
+                android:onClick="startExament"/>
+        </LinearLayout>
+        <!-- mode_b -->
+        <LinearLayout
+            android:id="@+id/group_b"
+            android:tag="b"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="5dp"
+            android:orientation="vertical"
+            android:background="#fff3d2">
+            <ImageView
+                android:id="@+id/mode_b"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:padding="5dp"
+                android:adjustViewBounds="true"/>
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:src="@drawable/btn_formation"
+                android:onClick="startFormation"/>
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:src="@drawable/btn_exament"
+                android:onClick="startExament"/>
+        </LinearLayout>
+        <!-- mode_c -->
+        <LinearLayout
+            android:id="@+id/group_c"
+            android:tag="c"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="5dp"
+            android:orientation="vertical"
+            android:background="#fff3d2">
+            <ImageView
+                android:id="@+id/mode_c"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:padding="5dp"
+                android:adjustViewBounds="true"/>
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:src="@drawable/btn_formation"
+                android:onClick="startFormation"/>
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:src="@drawable/btn_exament"
+                android:onClick="startExament"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

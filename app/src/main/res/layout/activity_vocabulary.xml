@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EDFFD8"
+    tools:context=".VocabularyActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+            <!-- 戻るボタン -->
+            <ImageButton
+                android:id="@+id/returnBtn"
+                android:scaleType="fitCenter"
+                android:onClick="onClickReturnBtn"
+                android:padding="5dp"
+                android:src="@drawable/return_button"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:background="@null"
+                android:adjustViewBounds="true"/>
+            <!-- サムネイル画像 -->
+            <ImageView
+                android:id="@+id/sceneThumbnail"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true" />
+            <!-- モード画像 -->
+            <ImageView
+                android:id="@+id/modethumbnail"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:adjustViewBounds="true" />
+        <!--音量シークバー -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="15dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:paddingRight="5dp"
+                android:src="@drawable/icon_sound"/>
+            <SeekBar
+                android:id="@+id/volumeBar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 区切り線 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#666" />
+    <!--メイン画面-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:background="@drawable/style_menu_background"
+        android:orientation="horizontal">
+
+        <!--スタート画面・結果画面-->
+        <LinearLayout
+            android:id="@+id/resultLayput"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal">
+            <!--おめでとう画像-->
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:layout_marginVertical="15dp"
+                android:src="@drawable/felicitation"
+                android:visibility="visible"/>
+            <!--試験開始ボタン-->
+            <ImageButton
+                android:id="@id/startBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="bottom"
+                android:layout_margin="30dp"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:src="@drawable/return_top"
+                android:onClick="onClickRestartBtn"/>
+        </LinearLayout>
+
+        <!-- ゲーム画面 -->
+        <FrameLayout
+            android:id="@+id/mainScreen"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:background="#F0F0F0"
+            android:visibility="gone">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <!-- 上段 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    tools:ignore="Suspicious0dp">
+                    <!-- 1個目 -->
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="5dp">
+                        <ImageView
+                            android:id="@+id/image0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/style_border" />
+                        <TextView
+                            android:id="@+id/text0"
+                            style="@style/vocabularyScript" />
+                    </FrameLayout>
+                    <!-- 2個目 -->
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="5dp">
+                        <ImageView
+                            android:id="@+id/image1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/style_border"/>
+                        <TextView
+                            android:id="@+id/text1"
+                            style="@style/vocabularyScript" />
+                    </FrameLayout>
+                    <!-- 3個目 -->
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="5dp">
+                        <ImageView
+                            android:id="@+id/image2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/style_border"/>
+                        <TextView
+                            android:id="@+id/text2"
+                            style="@style/vocabularyScript" />
+                    </FrameLayout>
+                </LinearLayout>
+                <!-- 改行 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+                    <!-- 4個目 -->
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="5dp">
+                        <ImageView
+                            android:id="@+id/image3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/style_border"/>
+                        <TextView
+                            android:id="@+id/text3"
+                            style="@style/vocabularyScript" />
+                    </FrameLayout>
+                    <!-- 5個目 -->
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="5dp">
+                        <ImageView
+                            android:id="@+id/image4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/style_border"/>
+                        <TextView
+                            android:id="@+id/text4"
+                            style="@style/vocabularyScript" />
+                    </FrameLayout>
+                    <!-- 6個目 -->
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="5dp">
+                        <ImageView
+                            android:id="@+id/image5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/style_border"/>
+                        <TextView
+                            android:id="@+id/text5"
+                            style="@style/vocabularyScript" />
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/correctMark"
+                android:visibility="invisible"
+                android:layout_margin="48dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </FrameLayout>
+        <!-- 問題数カウンター -->
+        <LinearLayout
+            android:id="@+id/counter"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="#494949"
+            android:orientation="vertical">
+        </LinearLayout>
+        <!-- サイドメニュー -->
+        <LinearLayout
+            android:id="@+id/sideMenu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="#EDFFD8">
+            <!-- リスタートボタン -->
+            <ImageButton
+                android:id="@+id/restartBtn"
+                android:onClick="onClickRestartBtn"
+                style="@style/animationPlayerButton"
+                android:src="@drawable/return_top"/>
+            <!-- 文字表示ボタン -->
+            <ImageButton
+                style="@style/animationPlayerButton"
+                android:onClick="onClickScriptBtn"
+                android:src="@drawable/btn_script" />
+            <!-- 音声ボタン -->
+            <ImageButton
+                android:id="@+id/sound_btn"
+                style="@style/animationPlayerButton"
+                android:onClick="onClickSoundBtn"
+                android:src="@drawable/btn_sound" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

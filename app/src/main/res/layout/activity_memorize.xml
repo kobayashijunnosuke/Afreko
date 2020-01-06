@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EDFFD8"
+    tools:context=".MemorizeActivity">
+
+    <!-- 上部バナー -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <!-- 戻るボタン -->
+        <ImageButton
+            android:id="@+id/returnBtn"
+            android:scaleType="fitCenter"
+            android:onClick="onClickReturnBtn"
+            android:padding="5dp"
+            android:src="@drawable/return_button"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:background="@null"
+            android:adjustViewBounds="true"/>
+        <!-- シーン画像 -->
+        <ImageView
+            android:id="@+id/sceneThumbnail"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingVertical="5dp"
+            android:adjustViewBounds="true"/>
+        <!-- モード画像 -->
+        <ImageView
+            android:id="@+id/modethumbnail"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:paddingVertical="5dp"
+            android:adjustViewBounds="true"/>
+        <!--音量シークバー -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="15dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:paddingRight="5dp"
+                android:src="@drawable/icon_sound"/>
+            <SeekBar
+                android:id="@+id/volumeBar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <!-- 文字表示ボタン -->
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:padding="5dp"
+            android:layout_marginLeft="5dp"
+            android:onClick="onClickScriptBtn"
+            android:src="@drawable/btn_script_disactive"
+            android:background="@null"/>
+
+    </LinearLayout>
+    <!-- 区切り線 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#666" />
+    <!--下部画面-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:orientation="horizontal">
+        <!--メイン画面-->
+        <HorizontalScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:background="#FFF"
+            android:scrollbarThumbHorizontal="@drawable/scrollbar_thumb"
+            android:scrollbarTrackHorizontal="@drawable/scrollbar_track"
+            android:fadeScrollbars="false">
+            <LinearLayout
+                android:id="@+id/parentLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp">
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+</LinearLayout>
